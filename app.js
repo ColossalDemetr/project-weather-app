@@ -6,6 +6,7 @@ let isCelsius = false;
 let currentTemp = null;
 
 
+
 const converToCelsius = (temp) => {
     const first = temp - 32;
     const second = first * 5 / 9;
