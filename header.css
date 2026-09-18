@@ -1,0 +1,17 @@
+.header {
+    /* border: 2px solid black; */
+    border-bottom: 1px solid rgba(87, 55, 73, 0.4);
+
+    display: grid;
+    grid-column: 1 / -1;
+
+    padding: 1rem;
+    font-size: 3rem;
+    
+
+    justify-content: center;
+    align-items: center;
+
+    /* color:#8F728F; */
+    color: aliceblue;
+};

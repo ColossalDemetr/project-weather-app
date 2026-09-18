@@ -5,12 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather-App</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="wrapper.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="aside.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <button id="call">press me</button>
+    <div class="wrapper">
 
-    <input type="search" id="search">
+        <header class="header">
+            <p>Weather App - Simplified</p>
+        </header>
+
+        <aside class="input">
+            <label for="search" id="label-search">Please enter a place</label>
+            <input type="search" id="search">
+            <button id="call">Search</button>
+        </aside>
+
+        <main class="main-content">
+            <!-- <h3 class="address">London, UK</h3>
+            <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel vitae molestias nostrum, maxime cumque, assumenda cupiditate ea quibusdam quisquam necessitatibus, placeat expedita tenetur veritatis perspiciatis.</p>
+            <p class="temperature">48F</p>
+            <button id="changeUnitGroup">View in Celcius</button> -->
+        </main>
+
+    </div>
 
 <script src="app.js"></script>    
 </body>
