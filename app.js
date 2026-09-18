@@ -22,7 +22,11 @@ const convertToFahrenheit = (temp) => {
 };
 
 async function searchWeather () {
-    if (!search.value) return;
+    if (!search.value) {
+        mainDiv.innerHTML = `
+            <h3 class="address">Type in city/country first!</h3>
+        `
+    };
     try {
         const response = await fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${search.value}?unitGroup=us&key=${API_KEY}`);
         const data = await response.json();
